@@ -1,0 +1,77 @@
+{% comment %} Feature {% endcomment %}
+-attributes
+-input to machine learning
+-independent variable
+-X
+-must be numbers range(-1-1)
+
+{% comment %} Label {% endcomment %}
+-dependent variable
+-output of the machine learning
+-y
+
+
+{% comment %} others {% endcomment %}
+-number of rows known as a number of instances
+-
+----------------------(rows)
+(collumns)
+-
+-
+-
+-
+-
+
+#NN 
+-has different layers 
+
+---------------------------------------------------------------------------------
+
+{% comment %} save a model and load{% endcomment %}
+-from sklearn.externals imprt joblib 
+#saving
+filename = 'model.sav'
+joblib.dump(model, filename)
+
+#load
+model = joblib.load(filename)
+
+
+
+{% comment %} Linear Regresion {% endcomment %}
+-regresion line 
+-r^2
+-y=mx+b
+-m=dy/dx
+
+
+
+
+
+
+
+
+--------------------------------------------------------------
+{% comment %} Car Eval {% endcomment %}
+#feature
+doors
+persons
+lug_boot
+
+#label
+class 
+
+
+#labels 
+buying
+maintenance
+safety        
+
+
+
+
+
+
+
+
+
