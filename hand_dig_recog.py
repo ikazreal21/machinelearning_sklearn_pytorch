@@ -18,7 +18,8 @@ X_test = X_test / 256
 
 
 # Model, traing , prediction
-clf = MLPClassifier(solver="adam", activation="relu", hidden_layer_sizes=(64, 64))
+clf = MLPClassifier(solver="adam", activation="relu",
+                    hidden_layer_sizes=(64, 64))
 # clf.fit(X_train, y_train)
 # prediction = clf.predict(X_test)
 
@@ -41,6 +42,7 @@ def accuracy(confusion_matrix):
 
 
 print("Accuracy :", accuracy(acc))
+
 
 # image insert
 img = Image.open("five2.png")

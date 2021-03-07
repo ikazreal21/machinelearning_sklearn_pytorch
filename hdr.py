@@ -11,7 +11,7 @@ Original file is located at
 
 import mnist
 from PIL import Image
-import numpy as np 
+import numpy as np
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 import joblib
@@ -25,7 +25,8 @@ X_test = X_test.reshape((-1, 28*28))
 X_train = (X_train/256)
 X_test = (X_test/256)
 
-clf = MLPClassifier(solver='adam', activation='relu', hidden_layer_sizes=(64, 64))
+clf = MLPClassifier(solver='adam', activation='relu',
+                    hidden_layer_sizes=(64, 64))
 
 clf.fit(X_train, y_train)
 
@@ -37,10 +38,12 @@ prediction = clf.predict(X_test)
 
 acc = confusion_matrix(y_test, prediction)
 
+
 def accuracy(confusion_matrix):
-  diagonal = confusion_matrix.trace()
-  elements = confusion_matrix.sum()
-  return diagonal/elements
+    diagonal = confusion_matrix.trace()
+    elements = confusion_matrix.sum()
+    return diagonal/elements
+
 
 print(accuracy(acc))
 
@@ -50,9 +53,9 @@ data = list(img.getdata())
 
 
 for i in range(len(data)):
-  data[i] = 255 - data[i]
+    data[i] = 255 - data[i]
 
 pred = data
 pred = np.array(pred)/256
 p = clf.predict([pred])
-print("Prediction: ",p) 
+print("Prediction: ", p)
