@@ -1,7 +1,8 @@
-# MachineLearning_Sklearn_Pytorch_Tensorflow
+# MachineLearning Using Sklearn, Pytorch, Tensorflow
 - Numpy Practice
 - Tensorflow and Keras Projects
 - Pytorch Projects
+- Neural network form Scratch
 
 
 
