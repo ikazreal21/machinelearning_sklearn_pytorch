@@ -1,17 +1,13 @@
-# MachineLearning_Sklearn_Pytorch_Tensorflow
-
-### Numpy Practice
-
-### Tensorflow and Keras Projects
-
-### Pytorch Projects
+# MachineLearning Using Sklearn, Pytorch, Tensorflow
+- Numpy Practice
+- Tensorflow and Keras Projects
+- Pytorch Projects
+- Neural network form Scratch
 
 ### Added Python Scripts
 
 - Python Scripts
 - Python Leet Code Exercise
-
-#
 
 #### Stock Prediction
 
