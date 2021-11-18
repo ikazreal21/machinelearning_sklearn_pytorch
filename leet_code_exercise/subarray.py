@@ -22,3 +22,6 @@ if res == arr_len + 1:
     print("No subarray exists")
 else:
     print(f"The smallest subarray length is {res}")
+
+
+# Use Break for Efficient Code and Sort the Array to find the Sum Quicker
